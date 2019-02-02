@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<script src="../js/validation.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+ <body>
+<form name="resigistratio_form" action="success.html" method="post" onsubmit="return validation()">
+		<fieldset>
+			<legend>Admission Form</legend>
+			<label>Client Details: </label>
+			<input type="text" id="fname" name="fname" placeholder="First Name" autofocus autocomplete="off">
+			<input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="off">
+			<span id="error"></span>
+			<br>
+
+			<label>Gender: </label>
+			<input type="radio" name="gender" id="male">Male
+			<input type="radio" name="gender" id="female">Female
+			<input type="radio" name="gender" id="other">Other
+			<br>
+			<label>Date of Birth:</label>
+			<input type="date" name="bday" id="date">
+			<br>
+			<label>Choose your favorite subject:</label>
+			<input type="checkbox" name="Math"  id="math">Math
+			<input type="checkbox" name="Physics"  id="physics">Physics
+			<input type="checkbox" name="Chemistry"  id="chemistry">Chemistry
+			<br>
+			<label>Your Permanent location: </label>
+			<span id="select_box">
+			<select>
+				<option value="choice" disabled>cities</option>
+				<option value="K">Kathmandu</option>
+				<option value="P">Palpa</option>
+				<option value="C">Chitwan</option>
+				<option value="PO">Pokhara</option>
+			</select>
+			</span>
+
+			<br>
+			<input type="file" name="fileupload" accept="image/*">
+			<br>
+
+			<label>Enter password: </label>
+			<input type="password" id="password" placeholder="enter password" name="password">
+			<br>
+			<label>conferm password: </label>
+			<input type="password" id="re-password" placeholder="re-enter password" name="password">
+			<br>
+
+			<textarea rows="7" cols="80" name="description">
+			</textarea>
+		</fieldset>
+			<input type="submit" name="submit" value="Submit" >
+			<input type="reset" name="reset" value="Reset">
+	</form>
+</body>
+</html>

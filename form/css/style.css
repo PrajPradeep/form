@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+    background-image:    url(../img/background.jpg);
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;     
+    position: relative;         
+
+}
+legend{
+	font:oblique 4vh Georgia, serif;
+}
+
+form
+{
+	
+	float: right;
+	font:oblique 110%/8vh Georgia, serif;
+	
+}
+label{
+	font-size: 3vh;
+}
+input[type=text], [type=password], textarea
+{
+    width: auto;
+    padding: 1vh ;
+    margin: 1vh;
+    box-sizing: border-box;
+    border: 1px solid #2ee5fb;
+    outline: none;
+    background-color:#79969a2e;
+}
+input[type=text]:focus, [type=password]:focus, textarea:focus
+{
+    background-color: #9bdee6;
+}
+input, textarea
+{
+	 font-family: Verdana, Geneva, sans-serif;
+	  font-size:80%;
+}
+#select_box
+{
+	display: inline-block;
+}
+
+#select_box select, input[type=file]
+{
+	
+	background-color: #79969a2e;
+	color: black;
+	padding:5%;
+}
+::placeholder
+{
+    color: #000000; 
+}
+
+input[type=submit],[type=reset]
+{
+	background-image: url(../img/submit.png);
+	width:auto;
+	height: auto;
+	background-position: top;
+	display: block; 
+	line-height: 25px;
+	color: #000;
+	opacity:0.9;
+	float: left;
+	margin: 1%;
+}
+input[type=submit]:hover,[type=reset]:hover
+{
+	background-image: url(../img/submit.png); 
+	width:auto; 
+	height: auto; 
+	background-position: bottom; 
+	display: block; 
+	line-height: 25px; 
+	color: #000;
+	opacity:0.9;
+}
+
+
